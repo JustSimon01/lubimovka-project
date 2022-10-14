@@ -40,7 +40,8 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [MiniCssExtractPlugin.loader,
+        use: [
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -48,8 +49,10 @@ module.exports = {
               sourceMap: true,
             },
           },
+          {
+            loader: 'postcss-loader',
+          },
           { loader: 'resolve-url-loader', },
-          { loader: 'postcss-loader', },
           {
             loader: 'sass-loader',
             options: {
