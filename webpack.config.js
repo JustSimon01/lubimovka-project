@@ -26,17 +26,8 @@ module.exports = {
         exclude: '/node_modules/'
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        type: 'asset/resource'
-      },
-      {
-        test: /\.(ttf|eot|woff|woff2|svg)$/,
+        test: /\.(png|svg|jpg|gif|ttf|eot|woff|woff2|svg)$/,
         type: 'asset/resource',
-      },
-      {
-        test: /\.svg$/,
-        exclude: path.resolve(__dirname, './src/fonts'),
-        use: ['@svgr/webpack'],
       },
       {
         test: /\.s[ac]ss$/i,
