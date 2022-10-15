@@ -24,3 +24,19 @@ p {
   letter-spacing: -0.01em;
   line-height: 1.4;
 }
+
+h1 {
+  color: $black;
+  font-size: 72px;
+  font-family: NeueMachina, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 70px;
+}
+
+h2 {
+  color: $black;
+  line-height: 40px;
+  font-family: NeueMachina, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 40px;
+}

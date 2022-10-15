@@ -1,0 +1,36 @@
+.promo {
+    display: grid;
+  grid-template-areas: 
+  "button title"
+  "text image"
+  "about-project about-project";
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__text {
+    grid-area: text;
+    font-size: $text_l;
+    line-height: $line_l;
+  }
+
+  &__img {
+    grid-area: image;
+    max-width: 720px;
+    max-height: 445px;
+  }
+
+  &__about-project {
+    grid-area: about-project;
+  }
+
+  &__about-project-header {
+    
+  }
+
+  &__about-project-text{
+    
+  }
+
+}
