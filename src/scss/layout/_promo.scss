@@ -19,18 +19,19 @@
 
   &__text {
     grid-area: text;
+    box-sizing: content-box;
     margin-right: 120px;
+    padding-left: 33px;
     font-size: $text_l;
     line-height: $line_l;
-    width: 420px;
+    max-width: 420px;
     justify-self: flex-end;
     font-weight: $font_m;
   }
 
   &__img {
     grid-area: image;
-    max-width: 720px;
-    max-height: 445px;
+    max-width: 100%;
   }
 
 
@@ -64,4 +65,50 @@
     line-height: $line_m;
   }
 
+}
+
+@media (max-width: $breakpoint_xl) {
+  .promo {
+    &__text{
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  .promo {
+    grid-template-areas: 
+    "logo button"
+    "title title"
+    "text text"
+    "image image"
+    "section section";
+
+    &__title {
+      grid-area: title;
+      margin: 58px auto 22px 24px;
+      max-width: 450px;
+      font-weight: $font_m;
+      font-size: $text_xl;
+    }
+
+    &__text{
+      margin-right: 24px;
+      padding-left: 86px;
+      font-size: $text_m;
+      line-height: $line_s;
+    }
+
+    &__img {
+      margin-top: 36px;
+      grid-area: image;
+      height: 450px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+
+    &__section {
+      padding: 56px 24px 72px;
+    }
+  }
 }

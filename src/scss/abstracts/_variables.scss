@@ -4,12 +4,12 @@ $black: #242424;
 $pebble_grey: #B7C09D;
 
 /* BREAK POINTS */
-/*
-$breakpoint_xll:
-$breakpoint_xl:
-$breakpoint_md:
-$breakpoint_sm:
-*/
+
+//$breakpoint_xll:
+$breakpoint_xl: 1024px;
+$breakpoint_md: 680px;
+//$breakpoint_sm:
+
 
 /* TEXT SIZE */
 $text_m: 20px;
@@ -17,6 +17,7 @@ $text_l: 28px;
 $text_xl: 40px;
 
 /* TEXT LINE HEIGHT */
+$line_s: 24px;
 $line_m: 28px;
 $line_l: 32px;
 $line_xl: 40px;
