@@ -1,18 +1,30 @@
 .promo {
-    display: grid;
+  display: grid;
   grid-template-areas: 
   "button title"
   "text image"
-  "about-project about-project";
+  "section section";
+  grid-template-columns: 1fr 1fr;
+
+  &__button {
+    margin: 33px auto auto 30px;
+  }
 
   &__title {
     grid-area: title;
+    margin: 59px auto 65px 0;
+    max-width: 450px;
+    font-weight: $font_m;
   }
 
   &__text {
     grid-area: text;
+    margin-right: 120px;
     font-size: $text_l;
     line-height: $line_l;
+    width: 420px;
+    justify-self: flex-end;
+    font-weight: $font_m;
   }
 
   &__img {
@@ -21,16 +33,35 @@
     max-height: 445px;
   }
 
+
+  &__section {
+    grid-area: section;
+    background-color: $pebble_grey;
+    padding: 79px 0 120px;
+  }
+
   &__about-project {
-    grid-area: about-project;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 569px;
+    gap: 17px;
   }
 
   &__about-project-header {
-    
+    font-weight: $font_m;
+    font-size: $text_xl;
+    line-height: $line_xl;
   }
 
   &__about-project-text{
-    
+    box-sizing: content-box;
+    max-width: 509px;
+    padding-left: 60px;
+    font-weight: $font_s;
+    font-size: $text_m;
+    line-height: $line_m;
   }
 
 }

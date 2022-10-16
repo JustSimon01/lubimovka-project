@@ -374,6 +374,10 @@ h2 {
 .promo {
   display: grid;
   grid-template-areas: "button title" "text image" "about-project about-project";
+  grid-template-columns: 1fr 1fr;
+}
+.promo__button {
+  padding-left: 30px;
 }
 .promo__title {
   grid-area: title;
@@ -394,6 +398,8 @@ h2 {
 /* COMPONENTS */
 .button {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   gap: 9px;
   border: none;
   border-right: 1px solid black;
@@ -404,7 +410,6 @@ h2 {
   font-family: Formular, "Helvetica Neue", Helvetica, sans-serif;
 }
 .button__arrow-left {
-  background-image: url(../../images/Arrow-left.svg);
-  width: 13px;
-  height: 21px;
+  width: 21px;
+  height: 13px;
 }/*# sourceMappingURL=index.css.map */

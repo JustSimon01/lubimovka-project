@@ -1,5 +1,7 @@
 .button {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 9px;
     border: none;
     border-right: 1px solid black;
@@ -8,10 +10,10 @@
     height: 31px;
     width: 120px;
     font-family: Formular, "Helvetica Neue", Helvetica, sans-serif;
+    cursor: pointer;
 
     &__arrow-left {
-      background-image: url(../../images/Arrow-left.svg);
-      width: 13px;
-      height: 21px;
+      width: 21px;
+      height: 13px;
     }
 }
