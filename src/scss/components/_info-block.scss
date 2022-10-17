@@ -1,0 +1,35 @@
+.info-block {
+  background-color: $pebble_grey;
+  padding: 79px 0 120px;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 569px;
+    gap: 17px;
+  }
+
+  &__header {
+    font-weight: $font_m;
+    font-size: $text_xl;
+    line-height: $line_l;
+  }
+
+  &__text{
+    box-sizing: content-box;
+    max-width: 509px;
+    padding-left: 60px;
+    font-weight: $font_s;
+    font-size: $text_m;
+    line-height: $line_m;
+  }
+  
+}
+
+@media (max-width: $breakpoint_md) {
+  .info-block {
+    padding: 56px 24px 72px;
+  }
+}
