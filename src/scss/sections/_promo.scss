@@ -35,7 +35,7 @@
   }
 
 
-  &__section {
+  &__block {
     grid-area: section;
     background-color: $pebble_grey;
     padding: 79px 0 120px;
@@ -53,7 +53,7 @@
   &__about-project-header {
     font-weight: $font_m;
     font-size: $text_xl;
-    line-height: $line_xl;
+    line-height: $line_l;
   }
 
   &__about-project-text{
@@ -96,18 +96,19 @@
       margin-right: 24px;
       padding-left: 86px;
       font-size: $text_m;
-      line-height: $line_s;
+      line-height: $line_m;
     }
 
     &__img {
       margin-top: 36px;
       grid-area: image;
       height: 450px;
+      width: $breakpoint_md;
       overflow: hidden;
       object-fit: cover;
     }
 
-    &__section {
+    &__block {
       padding: 56px 24px 72px;
     }
   }

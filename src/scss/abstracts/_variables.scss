@@ -7,20 +7,21 @@ $pebble_grey: #B7C09D;
 
 //$breakpoint_xll:
 $breakpoint_xl: 1024px;
-$breakpoint_md: 680px;
+$breakpoint_md: 800px;
 //$breakpoint_sm:
 
 
 /* TEXT SIZE */
-$text_m: 20px;
-$text_l: 28px;
-$text_xl: 40px;
+$text_m: 1.25em; //20px
+$text_l: 1.75em; //28px
+$text_xl: 2.5em; //40px
+$text_xxl: 4.375em; //70px
 
 /* TEXT LINE HEIGHT */
-$line_s: 24px;
-$line_m: 28px;
-$line_l: 32px;
-$line_xl: 40px;
+//$line_s: ;
+$line_m: 1;
+$line_l: 1.4;
+
 
 /* FONT WEIGHT */
 $font_s: 300;

@@ -10,7 +10,11 @@
 /* LAYOUT */
 @import "layout/header";
 @import "layout/footer";
-@import "layout/promo";
 
 /* COMPONENTS */
 @import "components/buttons";
+@import "components/button-with-left-arrow";
+
+/* SECTIONS */
+
+@import "sections/promo";

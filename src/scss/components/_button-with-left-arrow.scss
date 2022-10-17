@@ -1,0 +1,23 @@
+.button-with-left-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 9px;
+    border: none;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    height: 31px;
+    width: 120px;
+    font-family: Formular, "Helvetica Neue", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.button-with-left-arrow::after {
+  content: '';
+  background-image: url('../../images/Arrow-left.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 21px;
+  height: 13px;
+}
