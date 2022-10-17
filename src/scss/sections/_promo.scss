@@ -1,12 +1,16 @@
 .promo {
-  display: grid;
-  grid-template-areas: 
-  "button title"
-  "text image"
-  "section section";
-  grid-template-columns: 1fr 1fr;
+  margin: auto;
+
+  &__table {
+    display: grid;
+    grid-template-areas: 
+    "button title"
+    "text image";
+    grid-template-columns: 1fr 1fr;
+  }
 
   &__button {
+    grid-area: button;
     margin: 33px auto auto 30px;
   }
 
@@ -33,38 +37,6 @@
     grid-area: image;
     max-width: 100%;
   }
-
-
-  &__block {
-    grid-area: section;
-    background-color: $pebble_grey;
-    padding: 79px 0 120px;
-  }
-
-  &__about-project {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: auto;
-    max-width: 569px;
-    gap: 17px;
-  }
-
-  &__about-project-header {
-    font-weight: $font_m;
-    font-size: $text_xl;
-    line-height: $line_l;
-  }
-
-  &__about-project-text{
-    box-sizing: content-box;
-    max-width: 509px;
-    padding-left: 60px;
-    font-weight: $font_s;
-    font-size: $text_m;
-    line-height: $line_m;
-  }
-
 }
 
 @media (max-width: $breakpoint_xl) {
@@ -77,13 +49,15 @@
 
 @media (max-width: $breakpoint_md) {
   .promo {
+
+    &__table {
     grid-template-areas: 
-    "logo button"
+    "button button"
     "title title"
     "text text"
-    "image image"
-    "section section";
-
+    "image image";
+    }
+    
     &__title {
       grid-area: title;
       margin: 58px auto 22px 24px;
@@ -106,10 +80,6 @@
       width: $breakpoint_md;
       overflow: hidden;
       object-fit: cover;
-    }
-
-    &__block {
-      padding: 56px 24px 72px;
     }
   }
 }
