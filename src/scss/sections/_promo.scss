@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-width: $breakpoint_xl) {
+@include large {
   .promo {
     &__text{
       margin-right: 30px;
@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: $breakpoint_md) {
+@include medium {
   .promo {
 
     &__table {

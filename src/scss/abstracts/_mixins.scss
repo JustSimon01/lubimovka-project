@@ -1,0 +1,23 @@
+@mixin extra-large() {
+  @media screen and (max-width: $breakpoint_xl) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media screen and (max-width: $breakpoint_lg) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media screen and (max-width: $breakpoint_md){
+    @content;
+  }
+}
+
+@mixin small() {
+  @media screen and (max-width: $breakpoint_xs) {
+    @content;
+  }
+}
