@@ -1,0 +1,31 @@
+/* title-block__headers width */
+$header_gallery: 568px;
+
+.title-block {
+  padding: 20px 0;
+  margin-left: 362px;
+
+
+  &__header {
+    font-weight: $font_m;
+    font-size: $text_xl;
+    line-height: $line_m;
+    letter-spacing: -0.01em;
+  }
+
+  &__header_photogallery {
+    max-width: $header_gallery;
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  .title-block {
+
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  .title-block {
+
+  }
+}
