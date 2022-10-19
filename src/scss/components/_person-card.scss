@@ -1,0 +1,20 @@
+.person-card {
+  width: 210px;
+
+  &__foto {
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    font-size: $card_header_size;
+    line-height: $card_header_line;
+  }
+
+  &__about {
+    padding-left: 33px;
+    font-size: $card_text_size;
+    line-height: $card_text_line;
+  }
+  
+}

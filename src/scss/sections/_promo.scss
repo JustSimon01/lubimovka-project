@@ -1,5 +1,6 @@
 .promo {
   margin: auto;
+  padding-bottom: 98px;
 
   &__table {
     display: grid;
@@ -49,6 +50,7 @@
 
 @include medium {
   .promo {
+    padding-bottom: 57px;
 
     &__table {
     grid-template-areas: 

@@ -23,8 +23,16 @@ $text_xxl: 4.375em; //70px
 //$line_s: ;
 $line_m: 1;
 $line_l: 1.4;
-
+$line_h2_mobile: 1.142;
 
 /* FONT WEIGHT */
 $font_s: 300;
 $font_m: 400;
+
+/*CARDS TEXT*/
+$card_header_size:1.75em;
+$card_text_size:1em;
+
+/*CARDS LINE HEIGHT*/
+$card_header_line:1.142;
+$card_text_line:1.375;
