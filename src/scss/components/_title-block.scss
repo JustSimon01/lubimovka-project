@@ -1,31 +1,43 @@
-/* title-block__headers width */
-$header_gallery: 568px;
-
 .title-block {
-  padding: 20px 0;
-  margin-left: 362px;
-
+  max-width: 568px;
+  margin: 20px 24px 20px 362px;
 
   &__header {
     font-weight: $font_m;
     font-size: $text_xl;
     line-height: $line_m;
     letter-spacing: -0.01em;
+    padding: 0;
+    margin: 0;
   }
 
-  &__header_photogallery {
-    max-width: $header_gallery;
+}
+
+@media (max-width: $breakpoint_lg) {
+
+  .title-block {
+    margin-left: 220px;
   }
+  
 }
 
 @media (max-width: $breakpoint_md) {
-  .title-block {
 
+  .title-block {
+    margin-left: 95px;
   }
+  
 }
 
-@media (max-width: $breakpoint_md) {
+@media (max-width: $breakpoint_xs) {
   .title-block {
+    margin: 10px 24px;
+    max-width: 369px;
+
+    &__header {
+      font-size: $text_l;
+    }
 
   }
+
 }
