@@ -5,20 +5,23 @@
   padding-bottom: 112px;
   grid-template-columns: minmax(320px, 1440px);
 
+  &__header-block {
+    max-width: 766px;
+    width: 100%;
+    padding: 0 25px;
+    justify-self: center
+  }
+
   &__header {
-    overflow: hidden;
-    padding-left: 24px;
-    justify-self: center;
     max-width: 358px;
   }
 
-  &__table {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    gap: 30px;
-    padding: 0 25px;
+  &__swiper {
+    $inner_padding:25px;
+    padding: 0 $inner_padding;
+    height: 100%;
+    max-width: calc(930px + ($inner_padding * 2));
+    width: 100%;
   }
 }
 
