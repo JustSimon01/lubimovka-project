@@ -1,6 +1,6 @@
 .title-block {
   max-width: 568px;
-  margin: 10px 24px 10px 362px;
+  margin: 0 24px 0 362px;
   padding: 0;
   font-weight: $font_m;
   font-size: $text_xl;
@@ -10,19 +10,19 @@
 
 @media (max-width: $breakpoint_lg) {
   .title-block {
-    margin-left: 220px;
+    margin: 0 24px 0 220px;
   }  
 }
 
 @media (max-width: $breakpoint_md) {
   .title-block {
-    margin-left: 95px;
+    margin: 0 24px 0 95px;
   }  
 }
 
 @media (max-width: $breakpoint_xs) {
   .title-block {
-    margin: 10px 24px;
+    margin: 0 24px;
     max-width: 369px;
     font-size: $text_l;
   }
