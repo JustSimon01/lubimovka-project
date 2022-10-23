@@ -42,6 +42,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "core-js": "^3.25.5"
   }
 }
