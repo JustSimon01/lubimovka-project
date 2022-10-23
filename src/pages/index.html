@@ -37,29 +37,29 @@
     <div class="persons__header-block">
       <h2 class="persons__header">Заголовок блока с&nbsp;персонами</h2>
     </div>   
-    <div class="swiper persons__swiper">
-      <div class="swiper-wrapper">
-        <div class="person-card swiper-slide">
-          <img class="person-card__foto" src="<%=require('../images/person1.jpg')%>" alt="Персона 1">
-         <h4 class="person-card__name">Тереза Шимчак</h4>
-          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
-        </div>
-        <div class="person-card swiper-slide">
-          <img class="person-card__foto" src="<%=require('../images/person2.jpg')%>" alt="Персона 2">
+    <div class="swiper swiper-persons">
+      <ul class="swiper-wrapper swiper-persons__wrap">
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person1.jpg')%>" alt="фотография Терезы Шимчак">
           <h4 class="person-card__name">Тереза Шимчак</h4>
           <p class="person-card__about">Драматург, сценарист, преподаватель</p>
-        </div>
-        <div class="person-card swiper-slide">
-          <img class="person-card__foto" src="<%=require('../images/person3.jpg')%>" alt="Персона 3">
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person2.jpg')%>" alt="фотография Ивана Акимова">
+          <h4 class="person-card__name">Иван Акимов</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person3.jpg')%>" alt="фотография Ларисы Крофт">
+          <h4 class="person-card__name">Лариса Крофт</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person1.jpg')%>" alt="фотография Терезы Шимчак">
           <h4 class="person-card__name">Тереза Шимчак</h4>
           <p class="person-card__about">Драматург, сценарист, преподаватель</p>
-        </div>
-        <div class="person-card swiper-slide">
-          <img class="person-card__foto" src="<%=require('../images/person1.jpg')%>" alt="Персона 1">
-          <h4 class="person-card__name">Тереза Шимчак</h4>
-          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
   <p>Main</p>

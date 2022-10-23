@@ -9,19 +9,11 @@
     max-width: 766px;
     width: 100%;
     padding: 0 25px;
-    justify-self: center
+    justify-self: center;
   }
 
   &__header {
     max-width: 358px;
-  }
-
-  &__swiper {
-    $inner_padding:25px;
-    padding: 0 $inner_padding;
-    height: 100%;
-    max-width: calc(930px + ($inner_padding * 2));
-    width: 100%;
   }
 }
 
@@ -33,6 +25,6 @@
       font-size: $text_l;
       line-height: $line_h2_mobile;
     }
-
   }
 }
+
