@@ -4,27 +4,11 @@
   gap: 58px;
   padding-bottom: 112px;
   grid-template-columns: minmax(320px, 1440px);
-
-  &__header-block {
-    max-width: 766px;
-    width: 100%;
-    padding: 0 25px;
-    justify-self: center;
-  }
-
-  &__header {
-    max-width: 358px;
-  }
 }
 
 @include medium {
   .persons{
     padding-bottom: 100px;
-
-    &__header{
-      font-size: $text_l;
-      line-height: $line_h2_mobile;
-    }
   }
 }
 

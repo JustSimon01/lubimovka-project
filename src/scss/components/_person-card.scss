@@ -8,14 +8,14 @@
   &__name {
     margin-bottom: 8px;
     word-spacing: 9999px;//имя и фамилия всегда будут с новой строки для одинакового визуального стиля карточки
-    font-size: $card_header_size;
-    line-height: $card_header_line;
+    font-size: 1.75em;
+    line-height: 1.142;
   }
 
   &__about {
     padding-left: 33px;
-    font-size: $card_text_size;
-    line-height: $card_text_line;
+    font-size: 1em;
+    line-height: 1.375;
   }
 }
 
