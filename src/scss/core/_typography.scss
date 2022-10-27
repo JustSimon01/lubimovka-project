@@ -22,7 +22,7 @@ p {
   font-size: $text_m;
   font-family: Formular, "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: -0.01em;
-  line-height: 1.4;
+  line-height: $line_l;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
   font-size: $text_xxl;
   font-family: NeueMachina, "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: -0.01em;
-  line-height: 1;
+  line-height: $line_s;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
   font-size: $text_xl;
   font-family: NeueMachina, "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: -0.01em;
-  line-height: 1;
+  line-height: $line_s;
   font-weight: 400;
 }
 
@@ -47,7 +47,7 @@ h4 {
   font-size: $text_l;
   font-family: NeueMachina, "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: -0.01em;
-  line-height: 1.2;
+  line-height: $line_m;
   font-weight: 400;
 }
 
