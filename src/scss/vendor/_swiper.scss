@@ -1,0 +1,11 @@
+.swiper-persons {
+  padding: 0 25px;
+  height: 100%;
+  max-width: calc(930px + (25px * 2));
+  width: 100%;
+
+  &__wrap{
+    list-style: none;
+  }
+}
+
