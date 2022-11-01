@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "core-js": "^3.25.5",
-    "swiper": "^8.4.4"
-    "@fancyapps/ui": "^4.0.31",
+    "swiper": "^8.4.4",
+    "@fancyapps/ui": "^4.0.31"
   }
 }
