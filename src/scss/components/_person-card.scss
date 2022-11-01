@@ -1,0 +1,21 @@
+.person-card {
+  width: 210px;
+
+  &__foto {
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    word-spacing: 9999px;//имя и фамилия всегда будут с новой строки для одинакового визуального стиля карточки
+    font-size: 1.75em;
+    line-height: 1.142;
+  }
+
+  &__about {
+    padding-left: 33px;
+    font-size: 1em;
+    line-height: 1.375;
+  }
+}
+

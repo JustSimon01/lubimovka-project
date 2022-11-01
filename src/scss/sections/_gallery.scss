@@ -2,7 +2,7 @@
   padding: 30px 0 122px;
 
   &__wrap {
-    padding-top: 37px;
+    padding: 42px 0 0;
   }
 
   &__list {
@@ -35,6 +35,10 @@
 @media (min-width: $breakpoint_md) {
 
   .gallery {
+
+    &__wrap {
+      padding: 22px 0 0;
+    }
 
     &__list {
       grid-template-columns: repeat(4, 1fr);
