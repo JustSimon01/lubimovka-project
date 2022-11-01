@@ -24,8 +24,8 @@
       <img class="promo__img" src="<%=require('../images/promo.jpg')%>" alt="Промо">
     </div>
     <div class="info-block">
+      <h2 class="title-block">О проекте</h2>
       <div class="info-block__wrap">
-        <h2 class="info-block__header">О проекте</h2>
         <p class="info-block__text">За&nbsp;первый сезон проекта организаторы провели 17&nbsp;мероприятий 
           вместе с&nbsp;режиссёрами и&nbsp;актёрами московских театров: Театра.doc, Театрального Центра им. Вс. Мейерхольда, 
           Гоголь-центра, Электротеатра &laquo;Станиславский&raquo;, Ленкома.
@@ -33,14 +33,15 @@
       </div>
     </div>
   </section>
+
   <section class="video-gallery">
     <div class="video-gallery__wrapper">
       <h2 class="video-gallery__gen-title"> Заголовок блока с видео</h2>
       <div class="video-gallery__gen-container">
-        <a>
-          <img class="video-gallery__video" alt="Картинка для видео" src="<%=require('../images/testPhoto.jpg')%>"></img>
+        <img class="video-gallery__video" alt="Картинка для видео'ЛЕС НА ГОРЕ ПЕЧАЛИ'" src="https://i.ytimg.com/vi/FeP5N9wXmMY/maxresdefault.jpg"></img>
+        <a href="https://m.youtube.com/watch?v=FeP5N9wXmMY">
+          <button class="video-gallery__btn" aria-label="Запустить видео"></button>
         </a>
-        <button class="video-gallery__btn" aria-label="Запустить видео"></button>
       </div>
       <p class="video-gallery__text">Из этого следует два вывода: с одной стороны, искусство не должно быть равно реальности, потому что иначе оно не будет искусством, 
        с другой стороны – оно должно быть все-таки подобно реальности, иначе мы ничего не поймем, не подключимся и не распознаем замыслы автора. 
@@ -55,57 +56,107 @@
     <div class="video-gallery__title-wrapper">
       <h2 class="video-gallery__title">Заголовок блока с двумя видео</h2>
     </div>
-    <div class="video-gallery__two-videos">
-
-      <div class="video-gallery__container">
-        <a href="https://youtu.be/HgTsBvhjC70">
-          <img class="video-gallery__slide" alt="Картинка для видео" src="https://i.ytimg.com/vi/HgTsBvhjC70/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVChCMA8=&amp;rs=AOn4CLBC-P4mgZ39xoLwcqX44sjk_EHiYw">
-          </img> 
-        </a>
-        <button class="video-gallery__btn" aria-label="Запустить видео"></button>
-      </div>
-
-      <div class="video-gallery__container video-gallery__iframe_hiden">
-        <a href="https://youtu.be/HgTsBvhjC70">
-          <img class="video-gallery__slide" alt="Картинка для видео" src="https://i.ytimg.com/vi/HgTsBvhjC70/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVChCMA8=&amp;rs=AOn4CLBC-P4mgZ39xoLwcqX44sjk_EHiYw">
-          </img> 
-        </a>
-        <button class="video-gallery__btn" aria-label="Запустить видео"></button>
-      </div>
-    </div>
-
+    <div class="swiper swiper-video-gallery">
+      <ul class="swiper-wrapper swiper-video-gallery__wrap">
+        <li class="swiper-slide video-gallery__container">
+          <img class="video-gallery__slide" alt="Картинка для видео'ПИОН СЕЛИН ДИОН. Обсуждение пьесы Марта Райцес'" src="https://i.ytimg.com/vi/wPg_StIU5dM/maxresdefault.jpg"></img>
+          <a href="https://www.youtube.com/watch?v=wPg_StIU5dM">
+            <button class="video-gallery__btn" aria-label="Запустить видео"></button>
+          </a>
+        </li>
+        <li class="swiper-slide video-gallery__container">
+          <img class="video-gallery__slide" alt="Картинка для видео'КОБИ БРАЙАНТ. Читка пьесы Алексея Житковского'" src="https://i.ytimg.com/vi/HgTsBvhjC70/maxresdefault.jpg"></img>
+          <a href="https://www.youtube.com/watch?v=HgTsBvhjC70">
+            <button class="video-gallery__btn" aria-label="Запустить видео"></button>
+          </a>
+        </li>
+      </ul>
+    </div>  
     <div class="video-gallery__title-wrapper">
       <h2 class="video-gallery__title">Заголовок блока с тремя видео</h2>
-    </div>
- 
-    <div class="video-gallery__three-videos-slider">
-
-      <div class="video-gallery__container">
-        <a href="https://youtu.be/HgTsBvhjC70">
-          <img class="video-gallery__slide" alt="Картинка для видео" src="https://i.ytimg.com/vi/HgTsBvhjC70/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVChCMA8=&amp;rs=AOn4CLBC-P4mgZ39xoLwcqX44sjk_EHiYw">
-          </img> 
-        </a>
-        <button class="video-gallery__btn" aria-label="Запустить видео"></button>
-      </div>
-
-      <div class="video-gallery__container video-gallery__iframe_hiden">
-        <a href="https://youtu.be/HgTsBvhjC70">
-          <img class="video-gallery__slide" alt="Картинка для видео" src="https://i.ytimg.com/vi/HgTsBvhjC70/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVChCMA8=&amp;rs=AOn4CLBC-P4mgZ39xoLwcqX44sjk_EHiYw">
-          </img> 
-        </a>
-        <button class="video-gallery__btn" aria-label="Запустить видео"></button>
-      </div>
-
-      <div class="video-gallery__container video-gallery__iframe_hiden">
-        <a href="https://youtu.be/HgTsBvhjC70">
-          <img class="video-gallery__slide" alt="Картинка для видео" src="https://i.ytimg.com/vi/HgTsBvhjC70/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVChCMA8=&amp;rs=AOn4CLBC-P4mgZ39xoLwcqX44sjk_EHiYw">
-          </img> 
-        </a>
-        <button class="video-gallery__btn" aria-label="Запустить видео"></button>
-      </div>
+    </div> 
+    <div class="swiper swiper-video-gallery__three-videos">
+      <ul class="swiper-wrapper swiper-video-gallery__wrap">
+        <li class="swiper-slide video-gallery__container">
+          <img class="video-gallery__slide" alt="Картинка для видео'УТЕЧКА. Обсуждение пьесы Юлии Савиковской'" src="https://i.ytimg.com/vi/6lZb8Piss84/maxresdefault.jpg"></img> 
+          <a href="https://www.youtube.com/watch?v=6lZb8Piss84">
+            <button class="video-gallery__btn" aria-label="Запустить видео"></button>
+          </a>
+        </li>
+        <li class="swiper-slide video-gallery__container">
+          <img class="video-gallery__slide" alt="Картинка для видео 'BIG IN JAPAN. Читка пьесы Исмаила Имана'" src="https://i.ytimg.com/vi/JDs2DxwNLUo/maxresdefault.jpg"></img> 
+          <a href="https://www.youtube.com/watch?v=JDs2DxwNLUo">
+            <button class="video-gallery__btn" aria-label="Запустить видео"></button>
+          </a>
+        </li>
+        <li class="swiper-slide video-gallery__container">
+          <img class="video-gallery__slide" alt="Картинка для видео 'СВИНЬЯ В СТЕНЕ. Читка пьесы Елены Щетининой'" src="https://i.ytimg.com/vi/Rs2ew75nhTc/maxresdefault.jpg"></img> 
+          <a href="https://www.youtube.com/watch?v=Rs2ew75nhTc">
+            <button class="video-gallery__btn" aria-label="Запустить видео"></button>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
-  <p>Main</p>
+
+  <section class="gallery">
+    <h2 class="title-block">Заголовок блока с фотографиями</h2>
+    <div class="gallery__wrap">
+      <ul class="gallery__list">
+        <li class="gallery__list-item">
+          <img class="gallery__image" src="<%=require('../images/gallery_01.jpg')%>" alt="Актеры — мужчина и женщина — стоят на темной сцене на фоне багрового экрана">
+        </li>
+        <li class="gallery__list-item">
+          <img class="gallery__image" src="<%=require('../images/gallery_02.jpg')%>" alt="Женщина-актриса сидит на стуле со сценарием, произнося реплику">
+        </li>
+        <li class="gallery__list-item">
+          <img class="gallery__image" src="<%=require('../images/gallery_03.jpg')%>" alt="Мужчина-актер читает вслух сценарий, сидя на сцене">
+        </li>
+        <li class="gallery__list-item">
+          <img class="gallery__image" src="<%=require('../images/gallery_04.jpg')%>" alt="Несколько актеров читают сценарий перед микрофонами">
+        </li>
+        <li class="gallery__list-item">
+          <img class="gallery__image" src="<%=require('../images/gallery_05.jpg')%>" alt="Театральный зал полный людей">
+        </li>
+        <li class="gallery__list-item">
+          <img class="gallery__image" src="<%=require('../images/gallery_06.jpg')%>" alt="Девушка в белой блузке со сценарием в руках смотрит со сцены">
+        </li>
+        <li class="gallery__list-item">
+          <img class="gallery__image" src="<%=require('../images/gallery_07.jpg')%>" alt="Актеры на сцене перед микрофонами читают сценарий">
+        </li>
+        <li class="gallery__list-item">
+          <img class="gallery__image" src="<%=require('../images/gallery_08.jpg')%>" alt="Девушка в бирюзовой кофточке держит в руках сценарий и, улыбаясь, смотрит в камеру">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="persons">
+      <h2 class="title-block">Заголовок блока с&nbsp;персонами</h2> 
+    <div class="swiper swiper-persons">
+      <ul class="swiper-wrapper swiper-persons__wrap">
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person1.jpg')%>" alt="фотография Терезы Шимчак">
+          <h4 class="person-card__name">Тереза Шимчак</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person2.jpg')%>" alt="фотография Ивана Акимова">
+          <h4 class="person-card__name">Иван Акимов</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person3.jpg')%>" alt="фотография Ларисы Крофт">
+          <h4 class="person-card__name">Лариса Крофт</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person1.jpg')%>" alt="фотография Терезы Шимчак">
+          <h4 class="person-card__name">Тереза Шимчак</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 </main>
 <footer class="footer root__wrapper">
   <p>Footer</p>

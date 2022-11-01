@@ -1,0 +1,31 @@
+.swiper-persons {
+  padding: 0 25px;
+  height: 100%;
+  max-width: calc(930px + (25px * 2));
+  width: 100%;
+
+  &__wrap{
+    list-style: none;
+  }
+}
+
+.swiper-video-gallery {
+  height: 100%;
+  margin: auto;
+  max-width: 899px;
+  display: flex;
+  box-sizing: border-box;
+
+  &__wrap{
+    list-style: none;
+  }
+}
+
+.swiper-video-gallery__three-videos {
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 1378px;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
