@@ -20,9 +20,12 @@
   &__list-item {
     margin: 0;
     padding: 0;
-    cursor: pointer;
+    transition: ease-in-out 0.3s;
   }
 
+  &__list-item:hover {
+    transform: scale(1.05);
+  }
 
   &__image {
     display: block;
