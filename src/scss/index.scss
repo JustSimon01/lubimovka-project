@@ -16,10 +16,18 @@
 @import "components/button-with-left-arrow";
 @import "components/info-block";
 @import "components/title-block";
+@import "components/person-card";
 
 /* SECTIONS */
 @import "sections/promo";
+@import "sections/persons";
 @import "sections/gallery";
+
+/* VENDOR */
+@import "vendor/swiper";
+
+/* SWIPER */
+@import "../../node_modules/swiper/swiper-bundle.css";
 
 /* FANCYAPPS*/
 @import "../../node_modules/@fancyapps/ui/dist/fancybox.css";

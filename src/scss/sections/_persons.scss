@@ -1,0 +1,14 @@
+.persons {
+  display: grid;
+  overflow: hidden;
+  gap: 58px;
+  padding-bottom: 112px;
+  grid-template-columns: minmax(320px, 1440px);
+}
+
+@include medium {
+  .persons{
+    padding-bottom: 100px;
+  }
+}
+
