@@ -64,22 +64,55 @@
       </ul>
     </div>
   </section>
+
   <section class="performances">
+    <h2 class="title-block">Заголовок блока с&nbsp;тремя&nbsp;и&nbsp;более спектаклями</h2>
     <div class="performances__block-large">
       <div class="poster">
-        <img class="poster__img" src="<%=require('~~~~~')%>" alt="">
+        <img class="poster__img" src="<%=require('../images/performance_01.jpg')%>" alt=""> 
         <p class="poster__date">15 декабря</p>
         <p class="poster__time">11:00</p>
         <h5 class="poster__title">МАМА</h5>
         <p class="poster__cast">Драматург: Ольга Казакова
           Режиссёр: Катя Ганюшинаяч</p>
-        <p class="poster__about">читка проекта Любимовка.Ещё</p>
-        <button class="button-with-right-arrow">О СПЕКТАКЛЕ</button>
-        <button class="button-with-right-arrow">БИЛЕТЫ</button>
+        <p class="poster__about">читка&nbsp;проекта Любимовка.Ещё</p>
+        <button class="poster__about-button button-with-right-arrow">О СПЕКТАКЛЕ</button>
+        <button class="poster__tickets-button button-with-right-arrow ">БИЛЕТЫ</button>
       </div>
     </div>
+
     <div class="performances__block-medium"></div>
+
     <div class="performances__block-small"></div>
+
+  </section>
+
+  <section class="persons">
+      <h2 class="title-block">Заголовок блока с&nbsp;персонами</h2> 
+    <div class="swiper swiper-persons">
+      <ul class="swiper-wrapper swiper-persons__wrap">
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person1.jpg')%>" alt="фотография Терезы Шимчак">
+          <h4 class="person-card__name">Тереза Шимчак</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person2.jpg')%>" alt="фотография Ивана Акимова">
+          <h4 class="person-card__name">Иван Акимов</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person3.jpg')%>" alt="фотография Ларисы Крофт">
+          <h4 class="person-card__name">Лариса Крофт</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+        <li class="swiper-slide person-card">
+          <img class="person-card__foto" src="<%=require('../images/person1.jpg')%>" alt="фотография Терезы Шимчак">
+          <h4 class="person-card__name">Тереза Шимчак</h4>
+          <p class="person-card__about">Драматург, сценарист, преподаватель</p>
+        </li>
+      </ul>
+    </div>
   </section>
 </main>
 <footer class="footer root__wrapper">

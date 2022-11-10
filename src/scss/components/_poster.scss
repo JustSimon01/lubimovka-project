@@ -1,0 +1,57 @@
+.poster {
+  width: 420px;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 150px 149px 120px;
+  grid-template-areas:
+  "img date time"
+  "img title title"
+  "img cast cast"
+  "img about about"
+  "img about-button about-button"
+  "img tickets-button tickets-button";
+
+  &__img {
+    grid-area: img;
+    padding: 0 30px 0 0;
+  }
+
+  &__date {
+    grid-area: date;
+    margin: 0 0 8px;
+  }
+
+  &__time {
+    grid-area: time;
+    margin: 0 0 8px;
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__cast {
+    grid-area: cast;
+    padding: 16px 0 20px 30px;
+    font-size: $text_s;
+    line-height: $line_l;
+  }
+
+  &__about {
+    grid-area: about;
+    margin: 0 0 16px;
+    max-width: 150px;
+    font-size: $text_xs;
+    line-height: $line_m;
+  }
+
+  &__about-button {
+    grid-area: about-button;
+    margin: 0 0 16px;
+  }
+
+  &__tickets-button {
+    grid-area: tickets-button;
+  }
+
+}

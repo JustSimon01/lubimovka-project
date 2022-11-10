@@ -18,8 +18,16 @@
 @import "components/info-block";
 @import "components/title-block";
 @import "components/poster";
+@import "components/person-card";
 
 /* SECTIONS */
 @import "sections/promo";
+@import "sections/persons";
 @import "sections/gallery";
 @import "sections/performances";
+
+/* VENDOR */
+@import "vendor/swiper";
+
+/* SWIPER */
+@import "../../node_modules/swiper/swiper-bundle.css";
