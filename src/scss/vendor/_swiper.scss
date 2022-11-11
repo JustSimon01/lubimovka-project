@@ -9,3 +9,28 @@
   }
 }
 
+.swiper-performances {
+  padding: 75px 0 129px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(320px, 1440px);
+
+  &__wrap{
+    list-style: none;
+  }
+
+  &__slide-wrap {
+    box-sizing: content-box;
+    width: max-content;
+    height: 268px;
+    margin: 0 0 12px;
+    padding: 0 30px;
+    border-right: 1px solid black;
+  }
+
+  &__slide-wrap:last-child {
+    border-right: none;
+  }
+}
+

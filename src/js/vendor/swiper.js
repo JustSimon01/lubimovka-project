@@ -9,3 +9,8 @@
     slidesPerView: "auto",
   });
   
+
+  const performancesSwiper = new Swiper('.swiper-performances', {
+    loop: false,
+    slidesPerView: "auto",
+  });
