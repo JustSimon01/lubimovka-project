@@ -5,6 +5,7 @@
   }
 
   &__block-medium {
+    list-style: none;
     box-sizing: content-box;
     display: flex;
     flex-direction: row;
@@ -66,7 +67,7 @@
 
 @include medium() {
   .performances {
-    
+
     &__small-block {
       flex-wrap: wrap;
     }
