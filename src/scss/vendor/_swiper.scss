@@ -34,3 +34,21 @@
   }
 }
 
+@include small () {
+  .swiper-performances {
+    padding: 34px 0 100px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(320px, 1440px);
+
+    &__wrap {
+    height: 242px;
+    }
+
+    &__slide-wrap {
+      height: 242px;
+    }
+  }
+}
+

@@ -8,8 +8,7 @@
   "img title title"
   "img cast cast"
   "img about about"
-  "img about-button about-button"
-  "img tickets-button tickets-button";
+  ". buttons buttons";
 
   &__img {
     grid-area: img;
@@ -45,13 +44,55 @@
     line-height: $line_m;
   }
 
-  &__about-button {
-    grid-area: about-button;
-    margin: 0 0 16px;
+  &__buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
+}
 
-  &__tickets-button {
-    grid-area: tickets-button;
+@include small() {
+
+  .poster {
+    margin: auto;
+    width: 364px;
+    height: 242px;
+    display: grid;
+    grid-template-columns: 121px 153px 89px;
+    grid-template-areas:
+    "img date time"
+    "img title title"
+    "img cast cast"
+    "img about about"
+    "buttons buttons buttons";
+
+    &__img {
+      box-sizing: content-box;
+      height: 123px;
+    }
+
+    &__time {
+      margin: 0 0 16px;
+    }
+
+    &__date {
+      margin: 0 0 16px;
+    }
+
+    &__cast {
+      padding: 8px 0 8px 0px;
+    }
+  
+    &__about {
+      margin: 0 0 40px;
+    }
+
+    &__buttons {
+      grid-area: buttons;
+      display: flex;
+      flex-direction: row;
+      gap: 26px;
+    }
   }
-
 }
