@@ -1,0 +1,29 @@
+.past-events {
+  background-color: #B7C09D;
+  padding: 71px 0 141px;
+
+  &__title {
+    max-width: 410px;
+  }
+
+  &__block-with-button {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 50px 0 362px;
+    gap: 101px;
+  }
+
+  &__subtitle{
+    max-width: 410px;
+  }
+}
+
+
+@media (max-width: $breakpoint_lg) {
+  .past-events {
+
+    &__block-with-button {
+      margin: 20px 50px 0 220px;
+    }
+  }  
+}
