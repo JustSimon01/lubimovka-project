@@ -1,0 +1,98 @@
+.poster {
+  width: 420px;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 150px 149px 120px;
+  grid-template-areas:
+  "img date time"
+  "img title title"
+  "img cast cast"
+  "img about about"
+  ". buttons buttons";
+
+  &__img {
+    grid-area: img;
+    padding: 0 30px 0 0;
+  }
+
+  &__date {
+    grid-area: date;
+    margin: 0 0 8px;
+  }
+
+  &__time {
+    grid-area: time;
+    margin: 0 0 8px;
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__cast {
+    grid-area: cast;
+    padding: 16px 0 20px 30px;
+    font-size: $text_s;
+    line-height: $line_l;
+  }
+
+  &__about {
+    grid-area: about;
+    margin: 0 0 16px;
+    max-width: 150px;
+    font-size: $text_xs;
+    line-height: $line_m;
+  }
+
+  &__buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@include small() {
+
+  .poster {
+    margin: auto;
+    width: 364px;
+    height: 242px;
+    display: grid;
+    grid-template-columns: 121px 153px 89px;
+    grid-template-areas:
+    "img date time"
+    "img title title"
+    "img cast cast"
+    "img about about"
+    "buttons buttons buttons";
+
+    &__img {
+      box-sizing: content-box;
+      height: 123px;
+    }
+
+    &__time {
+      margin: 0 0 16px;
+    }
+
+    &__date {
+      margin: 0 0 16px;
+    }
+
+    &__cast {
+      padding: 8px 0 8px 0px;
+    }
+  
+    &__about {
+      margin: 0 0 40px;
+    }
+
+    &__buttons {
+      grid-area: buttons;
+      display: flex;
+      flex-direction: row;
+      gap: 26px;
+    }
+  }
+}
