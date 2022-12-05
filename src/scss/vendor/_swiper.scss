@@ -9,3 +9,23 @@
   }
 }
 
+.swiper-video-gallery {
+  height: 100%;
+  margin: auto;
+  max-width: 899px;
+  display: flex;
+  box-sizing: border-box;
+
+  &__wrap{
+    list-style: none;
+  }
+}
+
+.swiper-video-gallery__three-videos {
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 1378px;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}

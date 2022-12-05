@@ -1,0 +1,151 @@
+.video-gallery {
+  background: #E5E5E5;
+
+  &__wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 716px;
+  }
+
+  &__gen-title {
+    width: 100%;
+    margin-bottom: 37px;
+    font-weight: $font_m;
+    font-size: $text_xl;
+    line-height: $line_l;
+  }  
+
+  &__text {
+    width: 100%;
+    margin-top: 55px;
+  }
+
+  &__video {
+    width: 100%;
+    height: 70%;
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:10;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../../images/videoBtn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: (translate(-50%,-50%));
+    transition: opacity 1s ease;
+  }
+
+  &__btn:hover {
+    opacity: 0.7;
+    transition: opacity 1s ease;
+  }
+
+  &__title-wrapper {
+    max-width: 716px;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    max-width: 568px;
+    margin-top: 98px;
+  }
+
+  &__container {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 59px;
+    max-width: 420px;
+    height: 236px;
+  }
+
+  &__container:last-of-type {
+    margin-right: 0;
+  }
+
+  &__gen-container {
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  &__slide {
+    width: 100%;
+    height: 236px;
+    border: 0;
+    list-style-type: none;
+    position: relative;
+    background-size: contain;
+  }
+
+}
+
+@include medium { 
+  .video-gallery {
+
+    &__wrapper {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__title-wrapper {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__title {
+      max-width: 450px;
+    }
+
+    &__container {
+      margin-right: 30px;
+    }
+
+    &__slide {
+      border: 0;
+      list-style-type: none;
+      position: relative;
+    }
+  }
+}
+
+@include small {
+  .video-gallery {
+
+    &__gen-title {
+      font-size: $text_l;
+      line-height: $line_m;
+      margin-bottom: 32px;
+      margin-top: 57px;
+    }
+
+    &__title-wrapper {
+      margin-bottom: 32px;
+      max-width: 350px;
+    }
+
+    &__title {
+      font-size: $text_l;
+      line-height: $line_m;
+    }
+
+    &__text {
+      margin-top: 32px;
+    }
+
+    &__container {
+      max-width: 299px;
+      height: 168px;
+    }
+  }
+}
