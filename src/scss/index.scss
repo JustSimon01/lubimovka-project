@@ -18,11 +18,12 @@
 @import "components/button-with-outline";
 @import "components/info-block";
 @import "components/title-block";
-@import "components/poster";
 @import "components/person-card";
+@import "components/poster";
 
 /* SECTIONS */
 @import "sections/promo";
+@import "sections/video-gallery";
 @import "sections/persons";
 @import "sections/gallery";
 @import "sections/performances";
@@ -33,3 +34,6 @@
 
 /* SWIPER */
 @import "../../node_modules/swiper/swiper-bundle.css";
+
+/* FANCYAPPS*/
+@import "../../node_modules/@fancyapps/ui/dist/fancybox.css";
