@@ -10,20 +10,47 @@
     display: flex;
     flex-direction: row;
     margin: 20px 50px 0 362px;
-    gap: 101px;
   }
 
   &__subtitle{
+    box-sizing: content-box;
     max-width: 410px;
+    padding: 0 101px 0 0;
   }
 }
 
 
-@media (max-width: $breakpoint_lg) {
+@include large () {
   .past-events {
 
     &__block-with-button {
       margin: 20px 50px 0 220px;
     }
   }  
+}
+
+@include medium() {
+  .past-events {
+  padding: 56px 25px 72px 25px;
+
+  &__block-with-button {
+    flex-direction: column;
+    margin: 0px 0px 0px 95px;
+  }
+
+    &__subtitle{
+      box-sizing: border-box;
+      max-width: 410px;
+      padding: 16px 0;
+    }
+  }  
+}
+
+@include small () {
+  .past-events {
+    &__block-with-button {
+      flex-direction: column;
+      margin: 0px 0px 0px 62px;
+    }
+    }  
 }

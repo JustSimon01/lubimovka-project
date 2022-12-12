@@ -31,10 +31,14 @@
     height: 268px;
     margin: 0 0 12px;
     padding: 0 30px;
+
+  }
+
+  &__poster-wrap_right-border {
     border-right: 1px solid black;
   }
 
-  &__poster-wrap:last-child {
+  &__poster-wrap_right-border:last-child {
     border-right: none;
   }
 }
@@ -75,7 +79,6 @@
       height: unset;
       margin: 0 0 32px;
       padding: 0 0 32px;
-      border-right: 1px solid black;
     }
 
     &__block-medium {
