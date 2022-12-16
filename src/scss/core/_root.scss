@@ -7,12 +7,19 @@
 .root {
   background-color: $forest_wolf;
   margin: 0 auto;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  transition: transform .7s;
+
+  &_is-active {
+    transform: translateY(73px);
+  }
 
   &__wrapper {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  &_lock {
+    overflow: hidden;
   }
 }

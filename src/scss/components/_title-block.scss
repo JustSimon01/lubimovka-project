@@ -6,17 +6,29 @@
   font-size: $text_xl;
   line-height: $line_s;
   letter-spacing: -0.01em;
+
+  &_single-performance-header {
+    margin: 0;
+  }
 }
 
 @media (max-width: $breakpoint_lg) {
   .title-block {
     margin: 0 24px 0 220px;
+
+    &_single-performance-header {
+      margin: 0;
+    }
   }  
 }
 
 @media (max-width: $breakpoint_md) {
   .title-block {
     margin: 0 24px 0 95px;
+
+    &_single-performance-header {
+      margin: 0;
+    }
   }  
 }
 
@@ -25,5 +37,9 @@
     margin: 0 24px;
     max-width: 369px;
     font-size: $text_l;
+
+    &_single-performance-header {
+      margin: 0;
+    }
   }
 }

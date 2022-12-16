@@ -20,6 +20,11 @@
   &__list-item {
     margin: 0;
     padding: 0;
+    transition: ease-in-out 0.3s;
+  }
+
+  &__list-item:hover {
+    transform: scale(1.05);
   }
 
   &__image {
@@ -46,4 +51,10 @@
 
   }
 
+}
+
+@include small() {
+  .gallery {
+    padding: 30px 0 100px;
+  }
 }
