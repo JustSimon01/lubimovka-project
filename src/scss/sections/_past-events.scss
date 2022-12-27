@@ -31,14 +31,14 @@
 
 @include medium() {
   .past-events {
-  padding: 56px 25px 72px 25px;
+    padding: 56px 25px 72px 25px;
 
-  &__block-with-button {
-    flex-direction: column;
-    margin: 0px 0px 0px 95px;
-  }
+    &__block-with-button {
+      flex-direction: column;
+      margin: 0px 0px 0px 95px;
+    }
 
-    &__subtitle{
+    &__subtitle {
       box-sizing: border-box;
       max-width: 410px;
       padding: 16px 0;
@@ -48,9 +48,10 @@
 
 @include small () {
   .past-events {
+
     &__block-with-button {
       flex-direction: column;
       margin: 0px 0px 0px 62px;
     }
-    }  
+  }  
 }

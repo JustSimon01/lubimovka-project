@@ -11,6 +11,10 @@
   width: 154px;
   font-family: Formular, "Helvetica Neue", Helvetica, sans-serif;
   cursor: pointer;
+  background: linear-gradient(to right, #000000 50%, transparent 50%);
+  transition: 0.5s;
+  background-size: 200%;
+  background-position: right;
 }
 
 .button-with-right-arrow::before {
@@ -20,4 +24,13 @@ background-repeat: no-repeat;
 background-size: contain;
 width: 21px;
 height: 13px;
+}
+
+.button-with-right-arrow:hover {
+  background-position: left;
+  color:$forest_wolf;
+}
+
+.button-with-right-arrow:hover::before  {
+  background-image: url('../../images/arrow-right-white.svg');
 }

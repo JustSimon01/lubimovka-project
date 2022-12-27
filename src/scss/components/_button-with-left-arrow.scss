@@ -11,6 +11,10 @@
     width: 120px;
     font-family: Formular, "Helvetica Neue", Helvetica, sans-serif;
     cursor: pointer;
+    background: linear-gradient(to right, #000000 50%, transparent 50%);
+    transition: 0.5s;
+    background-size: 200%;
+    background-position: right;
 }
 
 .button-with-left-arrow::after {
@@ -20,4 +24,14 @@
   background-size: contain;
   width: 21px;
   height: 13px;
+}
+
+.button-with-left-arrow:hover {
+  background-position: left;
+  color:$forest_wolf;
+}
+
+.button-with-left-arrow:hover::after  {
+  background-image: url('../../images/arrow-left-white.svg');
+  transition: 0.7s;
 }
