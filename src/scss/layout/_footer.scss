@@ -1,0 +1,121 @@
+.footer{
+  padding: 169px 0 0;
+}
+
+.footer-table {
+  display: grid;
+  padding: 42px 32px 54px;
+  grid-template-areas: 
+  "logo partners partners partners partners"
+  "logo adress - lists lists"
+  "logo copyrights confidentional designed developers";
+  grid-template-rows: 144px 327px 34px;
+  grid-template-columns: 175px 180px 407px 175px 1fr;
+  font-family: 'Formular', Arial, Helvetica, sans-serif;
+
+  &__adress {
+    grid-area: adress;
+  }
+
+  &__adress-name {
+    padding: 0 0 16px 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: NeueMachina, Arial, Helvetica, sans-serif; 
+  }
+
+  &__adress-route {
+    font-family: 'Formular';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__lists {
+    grid-area: lists;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0 auto 0 0;
+  }
+
+  &__list:last-child{
+    margin: 0;
+  }
+
+  &__list-line {
+    margin: 0 0 15px 0;
+  }
+
+  &__list-line:last-child {
+    margin: 0;
+  }
+
+  &__copyrights {
+    grid-area: copyrights;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__confidential {
+    grid-area: confidentional;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__designers {
+    grid-area: designed;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 17px;
+    height: 36px;
+  }
+  
+  &__designers-logo {
+    align-self: start;
+    padding: 0 4px 0 0;
+  }
+
+  &__designers-text {
+    align-self: flex-end;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__developers{
+    grid-area: developers;
+    font-size: 14px;
+    line-height: 17px;
+    width: 207px;
+  }
+}
+
+.footer__logo {
+  grid-area: logo;
+}
+
+.partners {
+  display: flex;
+  grid-area: partners;
+
+  &__title {
+    width: 145px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__logo {
+    height: 34px;
+    margin: 0 31px 0 0;
+  }
+  &__logo:last-child {
+    margin: 0;
+  }
+}
